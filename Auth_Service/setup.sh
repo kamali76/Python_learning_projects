@@ -1,0 +1,1 @@
+chmod +x Auth_Service/setup.sh Auth_Service/test_api.py
