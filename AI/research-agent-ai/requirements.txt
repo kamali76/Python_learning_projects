@@ -1,0 +1,11 @@
+# AI Framework
+agno>=1.0.0
+
+# Tools & APIs
+duckduckgo-search>=6.0.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Optional: For better terminal output/formatting
+rich>=13.0.0

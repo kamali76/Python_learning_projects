@@ -1,0 +1,9 @@
+# Ignore the virtual environment folder
+myaienv/
+
+# Ignore environment variables
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
