@@ -42,7 +42,7 @@ def run_research(topic_to_search):
 
     # 4. Save it to your data folder
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"AI/research-agent-ai/data/reports/research_{timestamp}.md"
+    filename = f"AI/research-agent-ai/data/reports/research_{topic_to_search}_{timestamp}.md"
 
     # Create directory if it doesn't exist
     os.makedirs(os.path.dirname(filename), exist_ok=True)
@@ -63,16 +63,3 @@ if __name__ == "__main__":
             print(f"\n[Final Failure] The agent could not complete the task: {e}")
     else:
         print("Please enter a valid topic.")
-
-
-# import google.generativeai as genai
-# import os
-# from dotenv import load_dotenv
-
-# load_dotenv()
-# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-
-# print("Your available models:")
-# for m in genai.list_models():
-#     if 'generateContent' in m.supported_generation_methods:
-#         print(f"- {m.name}")
