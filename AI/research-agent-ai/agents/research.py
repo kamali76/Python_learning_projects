@@ -6,7 +6,7 @@ from agno.models.google import Gemini
 from agno.tools.duckduckgo import DuckDuckGoTools
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-# 1. Load your API Key (Add this to a .env file)
+# 1. Load your API Key
 load_dotenv()
 
 # 2. Define the Research Agent
@@ -21,7 +21,6 @@ researcher = Agent(
         "Format your final report in professional Markdown with an Executive Summary.",
         "If you find conflicting information, state it clearly.",
     ],
-    #show_full_reasoning=True,  # Shows the 'thinking' process in the terminal
     markdown=True,
 )
 
@@ -45,7 +44,7 @@ def run_research(topic_to_search):
     filename = f"AI/research-agent-ai/data/reports/research_{topic_to_search}_{timestamp}.md"
 
     # Create directory if it doesn't exist
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    #os.makedirs(os.path.dirname(filename), exist_ok=True)
 
     with open(filename, "w", encoding="utf-8") as f:
         f.write(f"# Research Topic: {topic_to_search}\n\n")
