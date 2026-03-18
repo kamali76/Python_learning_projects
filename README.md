@@ -7,7 +7,7 @@ This repository contains personal projects focused on backend development, cloud
 
 ## 🚀 Projects
 
-### 1. [Task Manager REST API](./task_manager_api/task_api)
+### 1. [Task Manager REST API](./task_manager_api)
 > FastAPI • PostgreSQL • JWT Authentication • Docker • pytest
 
 A production-ready REST API demonstrating clean backend architecture with full CRUD operations, JWT-based auth (access + refresh tokens), pagination, soft-delete, and Docker containerisation.
